@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        body{
+            background: blueviolet;
+        }
+        h1,div{
+            color: beige;
+            font: 15pt arial;
+            height: auto;
+            text-align: left;
+            
+        }
+        input,div#txtv{
+            color: blue;
+            text-align: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <title>Nacionalidade</title>
+    <h1>Por favor, digite onde você nasceu :</h1>
+    <input type="text" id="txtv" >
+    <input type="button" id="res" value="verificar" onclick="txt()">
+    <div id="p">Sua nacionalidade</div>
+
+   <Script>
+        function txt(){
+            var pais =  window.document.getElementById('txtv')
+            var res =   window.document.getElementById ('div#p')
+            var pais = (pais.value)
+            p.innerHTML =  `Você nasceu em :  ${pais}, `
+
+            if(pais == "Brasil"){
+
+                p.innerHTML += ( `então você é brasileiro`)
+            
+            } else {
+             
+                p.innerHTML = (`Então você é estrangeiro`)
+
+            }
+            
+
+        }
+            
+    </Script>
+    
+</body>
+</html>
